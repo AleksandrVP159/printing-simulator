@@ -37,8 +37,6 @@ let typingTimer = ref(null)
 let minutesSpentTyping = ref(0)
 let hasTypingTestStarted = ref(false)
 let isTypingTestFinished = ref(false)
-let loading = ref(true)
-let errored = ref(false)
 
 let typingInputRef = ref(null)
 
@@ -53,7 +51,7 @@ onBeforeUnmount(() => {
 // computed
 const text = computed(() => store.getters.getRequests)
 
-const textArraySplit = computed(() => text.value.split(''))
+const textArraySplit = computed(() => text.value)
 
 const isTypedTextCorrect = computed(() => {
     let i = typedText.value.length
