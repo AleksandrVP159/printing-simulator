@@ -1,5 +1,5 @@
 export default {
   getRequests(state) {
-    return [...state.requests].toString();
+    return [...state.requests].toString().split("");
   },
 };
