@@ -188,7 +188,6 @@ const finishedTypingText = () => {
 }
 
 .typing-area__text-span_correct {
-    border: 10px solid transparent;
     color: green;
 }
 
